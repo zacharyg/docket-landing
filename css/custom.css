@@ -1,25 +1,37 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+
 *{
-	font-family: Helvetica;
+	font-family: Helvetica Neue, Helvetica, Arial;
 	color: black;
+    line-height: 1.25em;
 }
 
 h1{
-	font-size: 9vw;
+	font-size: 9vmin;
 }
-h4{
-    font-size: 3vw;
+
+h2{
+    font-size: 6vmin;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.45em;
 }
 
 a{
-	color:black;
-	/*opacity: 0.9;*/
-	text-decoration: none;
+	color: black;
+    text-decoration: none;
 	font-size: 1em;
 }
 a:hover{
-	color:black;
-	opacity: 1;
-	text-decoration: underline;
+	color: #ffb818;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
 }
 
 
@@ -32,3 +44,155 @@ a:hover{
     padding-bottom: 50%;
     overflow: hidden;
 }
+
+img {
+
+    width: 100%;
+
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    z-index: 100;
+
+}
+
+/*Button */
+
+.btn-outlined {
+    font-size: 1.45em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+.btn-outlined.btn-primary {
+    background: none;
+    border: 3px solid #ffb818;
+    color: #ffb818;
+}
+.btn-outlined.btn-primary:hover,
+.btn-outlined.btn-primary:active {
+    color: #FFF;
+    background: #ffb818;
+    border-color: #ffb818:
+}
+
+
+
+/*Responsive Navbar by http://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu*/
+
+#logo{
+
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 40px;
+    background: url(../img/docket-logo.png) no-repeat center;
+    display: block;
+
+}
+
+nav {
+
+    float: right;
+    padding: 20px;
+
+    
+}
+
+#menu-icon {
+
+    display: hidden;
+    border-radius: 0 0 0 0 ;
+    width: 40px;
+    height: 40px;
+    background: black url(../img/menu-icon.png) center;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+
+}
+
+a:hover#menu-icon {
+
+    background-color: #ffb818;
+    border-radius: 0 0 0 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+li {
+
+    display: inline-block;
+    float: left;
+    padding: 10px
+
+}
+
+.current {
+
+/*    color: #ffb818;
+*/
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+    header {
+
+        position: absolute;
+
+    }
+
+    #menu-icon {
+
+        display:inline-block;
+
+    }
+
+    nav ul, nav:active ul { 
+
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0px 4px 4px;
+
+    }
+
+    nav li {
+
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    nav:hover ul {
+
+        display: block;
+
+    }
