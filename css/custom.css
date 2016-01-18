@@ -63,7 +63,21 @@ header {
 
 }
 
-/*Button */
+.footer{
+    font-size: .8em;
+}
+
+.fa{
+    letter-spacing: 30px;
+}
+.fa:hover{
+    color: #ffb818;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+/*Buttons by http://bootsnipp.com/snippets/featured/outline-square-buttons*/
 
 .btn-outlined {
     font-size: 1.45em;
@@ -100,6 +114,14 @@ header {
     background: url(../img/docket-logo.png) no-repeat center;
     display: block;
 
+}
+
+.logo-large{
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+    background: url(../img/docket-logo-large.png) no-repeat center;
+    display: block;
 }
 
 nav {
@@ -196,3 +218,4 @@ li {
         display: block;
 
     }
+}
