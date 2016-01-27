@@ -314,7 +314,9 @@ li {
     }
 
     .balloon-image{
-        margin-left:-150px;
+        margin-left:-35px;
+        height:500px;
+        width:400px;
     }
 
     .party-image{
