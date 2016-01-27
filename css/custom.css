@@ -143,6 +143,28 @@ body{
     margin-left:-100px;
 }
 
+.balloon-image{
+    z-index:-1;
+    background-image: url(../img/balloons.png);
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:750px;
+    width:600px;
+}
+
+.clouds{
+    z-index:-1;
+    background-image: url(../img/clouds.png);
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .follow{
     height:688px;
     background-image:url('http://i.imgur.com/WlZZ3gJ.png');
@@ -261,6 +283,10 @@ li {
         margin-left:-35px;
         margin-bottom:-50px;
 
+    }
+
+    .balloon-image{
+        margin-left:-150px;
     }
 
     h3{
