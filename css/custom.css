@@ -254,6 +254,14 @@ li {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
+    .pool-image{
+
+        height:300px;
+        width:400px;
+        margin-left:-35px;
+        margin-bottom:-50px;
+
+    }
 
     header {
 
