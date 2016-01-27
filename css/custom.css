@@ -2,29 +2,60 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
 @font-face {
-    font-family: Brandon_bld;
-    src: url("Brandon-Free/Brandon_bld.otf") format("opentype");
+    font-family: 'brandon_grotesquebold';
+    src: url('../fonts/brandon_bld-webfont.eot');
+    src: url('../fonts/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_bld-webfont.woff') format('woff'),
+         url('../fonts/brandon_bld-webfont.ttf') format('truetype'),
+         url('../fonts/brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+@font-face{
+    font-family: 'brandon-grotesqueregular';
+    src: url('../Brandon-Free/Brandon_light.otf');
+}
+
+
 @font-face {
-    font-family: Brandon_med;
-    src: url("Brandon-Free/Brandon_med.otf") format("opentype");
+    font-family: 'brandon_grotesquemedium';
+    src: url('../fonts/brandon_med-webfont.eot');
+    src: url('../fonts/brandon_med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_med-webfont.woff') format('woff'),
+         url('../fonts/brandon_med-webfont.ttf') format('truetype'),
+         url('../fonts/brandon_med-webfont.svg#brandon_grotesquemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 *{
-	font-family: Helvetica Neue, Helvetica, Arial;
 	color: black;
     line-height: 1.25em;
-    font-family: Brandon_med;
+    font-family: brandon_grotesquemedium;
 }
 
 h1{
-	font-size: 9vmin;
-    font-family: Brandon_bld;
+	font-size: 12vmin;
+    font-family: brandon_grotesquebold;
+}
+
+.docket-title{
+    letter-spacing: 5px;
 }
 
 h2{
     font-size: 6vmin;
+}
+
+h3{
+    font-size:4vmin;
+    font-family: brandon-grotesqueregular;
+    line-height: 10px;
 }
 
 p{
@@ -63,17 +94,21 @@ img {
 }
 
 header {
-    background: #fff;
     width: 100%;
-    height: 70px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 2px solid black;
-    z-index: 100;
+/*    border-bottom: 2px solid black;
+*/    z-index: 100;
 
 }
-
+body{
+    background-color: #E3F8FF;
+}
+.title{
+    background-color: #E3F8FF;
+}
 .footer{
     font-size: .8em;
 }
@@ -129,11 +164,11 @@ header {
 
 #logo{
 
-    margin: 20px;
+    margin: 5px;
     float: left;
-    width: 200px;
+    width: 80px;
     height: 40px;
-    background: url(../img/docket-logo.png) no-repeat center;
+    background: url(../img/Docket-Yellow-logo-40x40.png) no-repeat center;
     display: block;
 
 }
@@ -142,14 +177,14 @@ header {
     margin: 0 auto;
     width: 350px;
     height: 100px;
-    background: url(../img/docket-logo-large.png) no-repeat center;
+    background: url(../img/Docket-Logo-2.png) no-repeat center;
     display: block;
 }
 
 nav {
 
     float: right;
-    padding: 20px;
+    padding: 5px;
 
     
 }
@@ -180,6 +215,7 @@ a:hover#menu-icon {
 ul {
 
     list-style: none;
+    
 
 }
 
@@ -216,11 +252,11 @@ li {
 
         display: none;
         position: absolute;
-        padding: 20px;
+/*        padding: 20px;*/        
         background: #fff;
         border: 5px solid #444;
-        right: 20px;
-        top: 60px;
+        right: 5px;
+        top: 45px;
         width: 50%;
         border-radius: 4px 0px 4px 4px;
 
