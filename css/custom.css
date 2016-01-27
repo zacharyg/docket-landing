@@ -263,6 +263,10 @@ li {
 
     }
 
+    h3{
+        font-size: 5vmin;
+    }
+
     header {
 
         position: absolute;
