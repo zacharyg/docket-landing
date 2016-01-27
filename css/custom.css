@@ -155,6 +155,23 @@ body{
     width:600px;
 }
 
+.party{
+    background-color: #C1717F;
+}
+
+.party-image{
+    background-image: url(../img/party.png);
+    display: block;
+    margin:0 auto;
+    margin-top:5%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:600px;
+    width:700px;
+}
+
 .clouds{
     z-index:-1;
     background-image: url(../img/clouds.png);
@@ -287,6 +304,12 @@ li {
 
     .balloon-image{
         margin-left:-150px;
+    }
+
+    .party-image{
+        margin-top:5%;
+        height:250px;
+        width:300px;
     }
 
     h3{
