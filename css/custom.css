@@ -127,6 +127,22 @@ body{
     width:100%;
 }
 
+.pool{
+    background-color: white;
+
+}
+.pool-image{
+    background-image: url(../img/pool.png);
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:500px;
+    width:600px;
+    margin-left:-100px;
+}
+
 .follow{
     height:688px;
     background-image:url('http://i.imgur.com/WlZZ3gJ.png');
@@ -165,10 +181,12 @@ body{
 #logo{
 
     margin: 5px;
+    margin-left:15px;
     float: left;
-    width: 80px;
-    height: 40px;
-    background: url(../img/Docket-Yellow-logo-40x40.png) no-repeat center;
+    width: 40px;
+    height: 50px;
+/*    background: url(../img/docket-big-logo-white.png) no-repeat center;
+*/    background-size: cover;
     display: block;
 
 }
@@ -177,7 +195,8 @@ body{
     margin: 0 auto;
     width: 350px;
     height: 100px;
-    background: url(../img/Docket-Logo-2.png) no-repeat center;
+    background: url(../img/docket-big.png) no-repeat center;
+    background-size: cover;
     display: block;
 }
 
@@ -215,7 +234,7 @@ a:hover#menu-icon {
 ul {
 
     list-style: none;
-    
+
 
 }
 
