@@ -6,7 +6,30 @@
     <meta charset="utf-8">
     <title>Docket</title>
     <meta name="description" content="Organize your academic life in one place.">
-    <meta name="Zechariah Guo" content="Docket">
+    <meta name="author" content="Zechariah Guo">
+    <meta name="keywords"  content="USC, calendar, productivity, blackboard, piazza, startups, start up, Spark SC, entrepreneur, los angeles, students" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="icon" href="favicon.ico">
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@randomasiandood">
+    <meta name="twitter:creator" content="Docket">
+    <meta name="twitter:title" content="The Crowd-Driven Calendar">
+    <meta name="twitter:description" content="Spotify meets Google Calendar. Connect with classmates and find genres of events you're interested in!">
+    <meta name="twitter:image:src" content="img/docket-big.png">
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="http://www.docketcalendar.com">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Crowd-Driven Calendar">
+    <meta property="og:image" content="img/docket-big.png"/>
+    <meta property="og:description" content="Spotify meets Google Calendar. Connect with classmates and find genres of events you're interested in!">
+    <meta property="og:site_name" content="Docket">
+    <meta property="article:author" content="https://www.facebook.com/zechariah.guo">
+    <meta property="article:publisher" content="https://www.facebook.com/zechariah.guo">
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Docket">
+    <meta itemprop="description" content="Spotify meets Google Calendar. Connect with classmates and find genres of events you're interested in!">
+    <meta itemprop="image" content="img/docket-big.png">
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +41,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -42,7 +70,7 @@
     
     <div class="container title">
       <div class="row">
-        <div class="twelve columns" style="margin-top: 10%; text-align:center">
+        <div class="wow animated fadeIn twelve columns" style="margin-top: 10%; text-align:center">
           <h1 class="docket-title">Docket</h1>
           <h3>Your academic life organized in one place.</h3>
           
@@ -56,10 +84,10 @@
       <div class="container">
         <div class="row" style="margin-bottom:10%;">
           <div class="six columns" style="margin-top: 15%; text-align:left">
-            <div class="pool-image" style="text-align:center"></div>
+            <div class="wow animated fadeInLeft pool-image" style="text-align:center"></div>
           </div>
           <div class="six columns" style="margin-top: 25%; text-align:right;">
-            <h2>Pool your productivity by sharing calendars.</h2>
+            <h2>Pool your productivity by syncing calendars.</h2>
             <p>Share calendars with your classmates to save time and stress. Never miss a deadline again!</p>
           </div>
           
@@ -76,7 +104,7 @@
             <p>Stay up to date on events that interest you–from acro-yoga to zip-lining!</p>
           </div>
           <div class="six columns" style="margin-top: 5%; text-align:left;">
-            <div class="balloon-image" style="text-align:center"></div>
+            <div class="balloon-image wow animated slideInUp" style="text-align:center"></div>
           </div>
           <!-- <div class="six columns" style="margin-top: 25%; text-align:right">
             <div class="placeholder-square" style="float:right"></div>
@@ -92,7 +120,7 @@
           <div class="twelve columns" style="margin-top: 10%; margin-bottom:7.5%; text-align:center">
             <h2>Create your own streams for study groups or parties.</h2>
             <p>No more complicated coordinating through group chats–just update the event on Docket!</p>
-            <div class="party-image" style="text-align:center"></div>
+            <div class="wow animated tada party-image" style="text-align:center"></div>
           </div>
           
         </div>
@@ -107,21 +135,33 @@
           <!--           <div class="twelve columns" style="margin-top: 5%; text-align:center">
             <h2>Save time and stress less!</h2>
           </div> -->
-          <div class="twelve columns" style="margin-top: 5%; margin-bottom: 5%; text-align:center">
-            <p><a href="http://kericular.herokuapp.com/" class="btn btn-outlined btn-primary">Sign Up</a></p>
-          </div>
-
-          <div class="twelve columns footer" style="margin-bottom:2.5%;
+          <div class="three columns footer" style="margin-top:6%; margin-bottom: 6%;
             text-align:center">
-            <div class="logo-large"></div>
+            <div class="logo-large"></div> 
+            <div id="buttondiv" style="margin-top:15%;">
+              <p><a href="http://kericular.herokuapp.com/" class="btn btn-outlined btn-primary">Sign Up</a></p>
+            </div>
+               
+          </div>
+          <div class="three columns footer" style="margin-top:6%; margin-bottom: 6%;
+            text-align:center">
             <p>Made with love in Los Angeles.<br/>©2015 GYLT, CO.</p>
             <a href="">Terms</a> • <a href="">Privacy</a> • <a href="">Press Kit</a><br/><br/>
+            
+          </div>
+          <div class="three columns footer" style="margin-top: 6%; margin-bottom: 6%; text-align:center">
+            <p>Made with love in Los Angeles.<br/>©2015 GYLT, CO.</p>
+            <a href="">Terms</a> • <a href="">Privacy</a> • <a href="">Press Kit</a><br/><br/>
+          </div>
+          <div class="three columns footer" style="margin-top:7%; margin-bottom: 6%;
+            text-align:center">
             <div class="fatext">
               <a href=""><i class="fa fa-facebook fa-2x"></i></a><a href=""><i class="fa fa-twitter fa-2x"></i></a><a href=""><i class="fa fa-calendar fa-2x"></i></a>
             </div>
+            <p>© Copyright 2016, GYLT.</p>
             
           </div>
-
+          
         </div>
       </div>
     </div>

@@ -111,6 +111,7 @@ body{
 }
 .footer{
     font-size: .8em;
+
 }
 
 .fa{
@@ -205,8 +206,8 @@ body{
 .btn-outlined {
     font-size: 1.45em;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
     border-radius: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
@@ -224,7 +225,23 @@ body{
     border-color: #ffb818:
 }
 
-
+/*animations*/
+.fadeIn {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.3s;
+}
+.fadeInLeft {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+}
+.slideInUp {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+}
+.tada {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.3s;
+}
 
 /*Responsive Navbar by http://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu*/
 
@@ -306,7 +323,7 @@ li {
 @media only screen and (max-width : 640px) {
     .pool-image{
 
-        height:300px;
+        height:330px;
         width:400px;
         margin-left:-35px;
         margin-bottom:-50px;
@@ -325,6 +342,9 @@ li {
         width:300px;
     }
 
+    .logo-large{
+        margin-bottom:-8%;
+    }
     h3{
         font-size: 5vmin;
     }
