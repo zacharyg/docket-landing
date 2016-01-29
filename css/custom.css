@@ -327,6 +327,12 @@ li {
     padding: 10px
 
 }
+li:hover{
+    color: #ffb818;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
 
 .current {
 
@@ -336,6 +342,14 @@ li {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
+    li:hover{
+        background-color: #ffb818;
+        color: white;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
     .pool-image{
 
         height:330px;
