@@ -106,9 +106,6 @@ header {
 body{
     background-color: #E3F8FF;
 }
-.title{
-    background-color: #E3F8FF;
-}
 
 .fa{
     letter-spacing: 30px;
@@ -189,6 +186,50 @@ body{
     background-image:url('http://i.imgur.com/WlZZ3gJ.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*abt*/
+.about{
+    background-color: white;
+}
+.about p{
+    font-family: brandon-grotesqueregular;
+    font-size: 1.25em;
+}
+
+figure .img {
+    width: 100%;
+
+}
+
+figure {
+    text-align: center;
+    display: table;
+    max-width: 100%; /* demo; set some amount (px or %) if you can */
+    margin: 30px auto; /* not needed unless you want centered */
+}
+
+.circle {
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    border-radius: 10rem;
+    /* border:1px solid #aaaaaa; */
+    /* border: 1px solid #aaaaaa; */
+
+   }
+figure .img:hover {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background:#f287bd;
+    opacity: 1;
+
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    /* border:1px solid #aaaaaa; */
 }
 
 /*Footer*/
