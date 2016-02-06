@@ -121,10 +121,6 @@ body{
     width:100%;
 }
 
-.pool{
-    background-color: white;
-
-}
 .pool-image{
     background-image: url(../img/pool.png);
     display: block;
@@ -169,6 +165,17 @@ body{
 .clouds{
     z-index:-1;
     background-image: url(../img/clouds.png);
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pool{
+    background-color: white;
+    z-index:-1;
+    background-image: url(../img/bottle-bg.png);
     display: block;
     position: relative;
     background-size: cover;
@@ -230,7 +237,26 @@ figure .img:hover {
     -moz-border-radius: 2rem;
     border-radius: 2rem;
     /* border:1px solid #aaaaaa; */
+    
+
+
 }
+
+#wrapper .text {
+    color:white;
+    position:relative;
+    bottom:100px;
+    left:0px;
+    visibility:hidden;
+}
+
+#wrapper:hover .text {
+
+    visibility:visible;
+
+}
+
+
 
 /*Footer*/
 .footer{
