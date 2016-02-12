@@ -19,6 +19,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     src: url('../Brandon-Free/Brandon_light.otf');
 }
 
+@font-face{
+    font-family: 'grb';
+    src: url('../gotham-rounded-book.otf');
+}
+
 
 @font-face {
     font-family: 'brandon_grotesquemedium';
@@ -34,9 +39,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 *{
-	color: black;
     line-height: 1.25em;
-    font-family: brandon_grotesquemedium;
+    font-family: grb;
 }
 
 h1{
@@ -49,7 +53,8 @@ h1{
 }
 
 h2{
-    font-size: 6vmin;
+    font-family: brandon_grotesquemedium;
+    font-size: 5vmin;
 }
 
 h3{
@@ -147,6 +152,16 @@ body{
 
 .party{
     background-color: #C1717F;
+
+    z-index:-1;
+    background-image: url(../img/partybg.png);
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color:white;
 }
 
 .party-image{
@@ -171,6 +186,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+.clouds h2{
+    color:#51110B;
+}
+.clouds p{
+    color:#D15B0B;
+}
 
 .pool{
     background-color: white;
@@ -187,6 +208,127 @@ body{
     background-color: white;
 
 }
+
+.email{
+    background-color: #343645;
+    color:white;
+}
+form{
+    /*width: 300px;
+    margin: 0 auto;
+    color:black;*/
+
+    
+}
+/*http://osvaldas.info/examples/minimalist-newsletter-subscription-form/
+*/
+.newsletter
+{   
+
+    width: 100%;
+    max-width: 20.25rem; /* 420 */
+    height: 3.75rem; /* 60 */
+    font-size: 1.25rem; /* 20 */
+    position: absolute;
+/*    top: 50%;
+*/    left: 50%;
+    margin: -1.875rem 0 0 -10rem; /* 30 210 */
+}
+.newsletter input
+{
+/*    border-radius: 0px;
+*/    
+    
+    -webkit-transition: color .25s ease, background-color .25s ease, border-color .25s ease;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease;
+}
+.emailform{
+
+
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    color: #ffb818;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    border-color: transparent;
+    padding: 0 5rem 0 1.25rem; /* 80 20 */
+}
+.emailform::-webkit-input-placeholder    { color: #999 !important; }
+.emailform:-moz-placeholder              { color: #999 !important; }
+.emailform::-moz-placeholder             { color: #999 !important; }
+.emailform:-ms-input-placeholder         { color: #999 !important; }
+
+.emailform:hover
+{
+    border-color: #ffb818;
+}
+.emailform:focus
+{
+
+    color: #ffb818;
+    background-color: white;
+    border-color: #494736;
+}
+input.submitbutton{
+    /*height: 100%;*/
+/*    border-radius: 0px;
+*/    
+    font-weight: 700;
+    color: white;
+    background-color: #ffb818;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1.25rem; /* 20 */
+
+    -webkit-animation: appear-from-inside .25s ease, fade-in .25s linear;
+    animation: appear-from-inside .25s ease, fade-in .25s linear;
+
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+}
+input.submitbutton:hover,
+input.submitbutton:focus
+{
+    color: #fff;
+}
+.newsletter--active .submitbutton
+{
+    display: block;
+}
+.newsletter:not( .newsletter--active ) input[type='submit']
+{
+    display: none;
+}
+
+@-webkit-keyframes appear-from-inside
+{
+    from    { -webkit-transform: scale( 0 ); }
+    75%     { -webkit-transform: scale( 1.1 ); }
+    to      { -webkit-transform: scale( 1 ); }
+}
+@keyframes appear-from-inside
+{
+    from    { transform: scale( 0 ); }
+    75%     { transform: scale( 1.1 ); }
+    to      { transform: scale( 1 ); }
+}
+
+@media screen and ( max-width: 30em ) /* 480 */
+{
+    .newsletter
+    {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0;
+    }
+}
+
 
 .follow{
     height:688px;
