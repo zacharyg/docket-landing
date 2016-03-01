@@ -586,9 +586,9 @@ li:hover{
     }
 
     .balloon-image{
-        margin-left:-35px;
-        height:500px;
-        width:400px;
+        /*margin-left:-35px;*/
+        height:450px;
+        width:350px;
     }
 
     .party-image{
