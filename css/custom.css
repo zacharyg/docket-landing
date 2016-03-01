@@ -195,13 +195,13 @@ body{
 
 .pool{
     background-color: white;
-    z-index:-1;
+/*    z-index:-1;
     background-image: url(../img/bottle-bg.png);
     display: block;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
 }
 
 .hook{
