@@ -195,13 +195,13 @@ body{
 
 .pool{
     background-color: white;
-/*    z-index:-1;
+    z-index:-1;
     background-image: url(../img/bottle-bg.png);
     display: block;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
 }
 
 .hook{
@@ -584,13 +584,10 @@ li:hover{
         margin-bottom:-50px;
 
     }
-    .pool{
-        background-image:none !important;
-    }
 
     .balloon-image{
-        /*margin-left:-35px;*/
-        height:450px;
+/*        margin-left:-35px;
+*/        height:450px;
         width:350px;
     }
 
